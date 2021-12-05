@@ -33,6 +33,7 @@ let loddingReducer = (initial = { lodding: false, error: "" }, action) => {
 
     case LODDING_END:
     case ADD_ITEMS:
+    case ADD_ITEM:
       return {
         ...initial,
         lodding: false

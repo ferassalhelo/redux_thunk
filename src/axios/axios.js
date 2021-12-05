@@ -24,6 +24,7 @@ let getData = () => {
 let addElment = text => {
   return async dispatch => {
     try {
+      dispatch(lodding());
       await axios.post(API, addItem());
       dispatch(addItem(text));
     } catch (error) {
